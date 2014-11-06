@@ -65,7 +65,7 @@ public class RandomMessageGenerator {
     }
     
     public final String getRandomMessage(){
-        Random random = new Random();
+        Random random = new Random(System.nanoTime());
         int randomNum = random.nextInt(list.size());
         String randomMessage = list.get(randomNum);
         return randomMessage;
